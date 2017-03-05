@@ -26,7 +26,8 @@ namespace sort_names
                     Console.WriteLine(pair);
                 }
                 //and this is where we want the sorted list to be stored
-                string path = @"c://Users/Andrew/Source/Repos/sort-names/sorted" + args[0];
+                //string startFile = args[0];
+                string path = @"c://Users/Andrew/Source/Repos/sort-names/sorted-names.txt" ;
 
                 // first check to see if the output file exists
                 if (!File.Exists(path))
@@ -43,7 +44,8 @@ namespace sort_names
                         File.AppendAllText(path, pair + Environment.NewLine);
                     }
                 }
-                Console.WriteLine("Finished: created" + path);
+                //Console.WriteLine(path, startFile);
+                Console.WriteLine("Finished: created sorted-names.txt");
 
 
             }
